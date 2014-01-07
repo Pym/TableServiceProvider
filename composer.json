@@ -1,0 +1,25 @@
+{
+    "name": "pym/table-service-provider",
+    "type": "library",
+    "version": "0.1.0",
+    "description": "Silex ServiceProvider for Pym/Table.",
+    "homepage": "http://github.com/Pym/TableServiceProvider/",
+    "keywords": ["database", "doctrine", "dbal", "Silex"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pierre-Yves Jamon",
+            "email": "github@eggiz.org",
+            "homepage": "http://pym.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "silex/silex": "~1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Pym": "src/"
+        }
+    }
+}
