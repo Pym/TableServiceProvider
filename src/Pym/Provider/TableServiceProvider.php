@@ -11,12 +11,12 @@ class TableServiceProvider implements ServiceProviderInterface
     {
         $app['table'] = $app->share(function ($app) {
 
-            $app['tables'] = isset($app['tables']) ? $app['tables'] : array();
+            $app['table.tables'] = isset($app['table.tables']) ? $app['table.tables'] : array();
 
             $tables = array();
-            foreach ($app['tables'] as $tableAlias => $tableName) {
+            foreach ($app['table.tables'] as $tableAlias => $tableName) {
                 if (is_int($tableAlias)) $tableAlias = null;
-                $tables[$tableName] = new Table($app['db'], $tableName, $tableAlias);
+                $tables[$tableName] = new Table($app['db'], $tableName, $tableAlias, array_keys($app['table.tables']));
             }
 
             return $tables;
