@@ -16,7 +16,7 @@
     ],
     "require": {
         "silex/silex": "~1.0",
-        "pym/table": "~0.1.0"
+        "pym/table": "~0.2"
     },
     "autoload": {
         "psr-0": {
