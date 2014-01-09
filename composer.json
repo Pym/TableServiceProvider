@@ -1,7 +1,7 @@
 {
     "name": "pym/table-service-provider",
     "type": "library",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Silex ServiceProvider for Pym/Table.",
     "homepage": "http://github.com/Pym/TableServiceProvider/",
     "keywords": ["database", "doctrine", "dbal", "Silex"],
@@ -16,7 +16,7 @@
     ],
     "require": {
         "silex/silex": "~1.0",
-        "pym/table": "~0.2"
+        "pym/table": "~0.3"
     },
     "autoload": {
         "psr-0": {
